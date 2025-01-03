@@ -1,0 +1,218 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: #B0B0B0;
+    overflow-y: scroll;
+}
+
+.outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.tree {
+    min-height: 400px;
+    max-height: 500px;
+    margin: 80px 0 0 0;
+    position: absolute;
+    overflow-y: scroll;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+.todos {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 10px;
+    accent-color: black;
+}
+
+.toggler::before {
+    content: "\25B6";
+    display: inline-block;
+    margin-right: 0;
+    transition: transform 0.3 ease-in-out;
+}
+
+.toggler.active::before {
+    transform: rotate(90deg);
+}
+
+.toggler {
+    cursor: pointer;
+}
+
+.toggler-target {
+    display: none;
+}
+
+.toggler-target.active {
+    display: block;
+}
+
+.search-box {
+    width: 350px;
+    background-color: #fff;
+    margin: 25px 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.row input {
+    flex: 1;
+    height: 20px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: black;
+}
+
+#search-button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+#search-button .fa-solid {
+    width: 23px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#search-button .fa-solid:active {
+    transform: scale(0.90);
+}
+
+
+::placeholder {
+    color: #B0B0B0;
+}
+
+.result-box {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.result-box ul {
+    border-top: 1px solid #B0B0B0;
+    padding: 8px 8px;
+    background-color: white;
+}
+
+.result-box ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.result-box ul li:hover {
+    background: darkgrey;
+}
+
+
+/* FOR CHIP */
+
+
+.chips-container {
+    margin-top: 20px;
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    background-color: lightslategray;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    height: 20px;
+}
+
+.chip-close {
+    margin-left: 10px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+
+.chip-close:hover {
+    scale: 1.5;
+}
+
+#clear-btn{
+    border-radius: 5px;
+    height: 40px;
+    background-color: black;
+    color:lightgrey;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#clear-btn:active{
+    scale: 0.98;
+}
+
+
+/*  */
+
+/* .todo::before {
+    content: "\2610";
+    display: inline-block;
+    margin-right: 5px;
+} */
+
+/* .todo.active {
+    text-decoration: line-through;
+    color: black;
+} */
+
+/* .todo.active::before {
+    content: "\2611";
+} */

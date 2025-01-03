@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree View</title>
+    <link rel="icon" type="image/x-icon" href="./Pictures/treeview.png">
+    <link rel="Stylesheet" href="./CSS/treeView.css">
+    <script src="https://kit.fontawesome.com/50f1fbab8e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>TREE VIEW STRUCTURE</h1>
+    <hr>
+    <div class="outer">
+        <div class="total">
+            <div class="search-box">
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Search Here..." autocomplete="off">
+                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+            <div class="tree">
+                <ul style="padding-left: 0px;">
+                    <li class="toggler first">
+                        <input type="checkbox" class="grandparent">
+                        <label>Amazon Products</label>
+                    </li>
+                    <ul class="todos toggler-target">
+                        <li class="toggler">
+                            <input type="checkbox" class="parent">
+                            <label>Electronics</label>
+                        </li>
+                        <ul class="toggler-target">
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Mobiles</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Apple Iphone</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Samsung</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Redmi</label>
+                                </li>
+                            </ul>
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Laptops</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Dell</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Macbook</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Hp</label>
+                                </li>
+                            </ul>
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Earphones</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Apple ibuds</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Samsung buds</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Oppo buds</label>
+                                </li>
+                            </ul>
+                        </ul>
+                        <li class="toggler">
+                            <input type="checkbox" class="parent">
+                            <label>Household</label>
+                        </li>
+                        <ul class="toggler-target">
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Kitchen Products</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Cookware</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Appliances</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Food Containers</label>
+                                </li>
+                            </ul>
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Cleaning Products</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Cleaning Supplies</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Cleaning Detergents</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Home Storage Solutions</label>
+                                </li>
+                            </ul>
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Home Decor</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Furniture</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Lighting</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Wall Art and Mirrors</label>
+                                </li>
+                            </ul>
+                        </ul>
+                        <li class="toggler">
+                            <input type="checkbox" class="parent">
+                            <label>Fashion</label>
+                        </li>
+                        <ul class="toggler-target">
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Clothing</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>T-shirts</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Jeans</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Jackets</label>
+                                </li>
+                            </ul>
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Shoes</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Sneakers</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Formal Shoes</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Boots</label>
+                                </li>
+                            </ul>
+                            <li class="toggler">
+                                <input type="checkbox" class="child">
+                                <label>Accessories</label>
+                            </li>
+                            <ul class="toggler-target">
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Watches</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Sunglasses</label>
+                                </li>
+                                <li class="last"><input type="checkbox" class="grandchild">
+                                    <label>Belts</label>
+                                </li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="chips-container">
+            <button id="clear-btn">CLEAR ALL</button>
+        </div>
+    </div>
+    <script src="./JS/treeView.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <li class="todo">Day 2</li>
+<li class="todo">Day 3</li>
+<li>
+    <div class="toggler">Day 4</div>
+    <ul class="toggler-target">
+        <li class="todo">Task 1</li>
+        <li class="todo">Task 2</li>
+        <li class="todo">Task 3</li>
+    </ul>
+</li> -->
